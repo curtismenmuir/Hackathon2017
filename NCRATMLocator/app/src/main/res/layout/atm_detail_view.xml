@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/atmHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/placeholder_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/atmHeading"
+        android:id="@+id/linear1">
+
+        <TextView
+            android:id="@+id/atmStatusHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/atmHeading"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/status"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmStatusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/atmHeading"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2">
+
+        <TextView
+            android:id="@+id/atmCostHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmStatusHeading"
+            android:layout_below="@+id/atmStatusHeading"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cost"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmCostValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmStatusValue"
+            android:layout_below="@+id/atmStatusValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear2"
+        android:id="@+id/linear3" >
+
+        <TextView
+            android:id="@+id/atmOwnerHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmCostHeading"
+            android:layout_below="@+id/atmCostHeading"
+            android:paddingRight="5dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/owner"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmOwnerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/atmUsageHeading"
+            android:layout_alignStart="@+id/atmCostValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear3"
+        android:id="@+id/linear4">
+
+        <TextView
+            android:id="@+id/atmUsageHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmOwnerHeading"
+            android:layout_below="@+id/atmOwnerHeading"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/usage"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmUsageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmOwnerValue"
+            android:layout_below="@+id/atmOwnerValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear4"
+        android:id="@+id/linear5" >
+
+        <TextView
+            android:id="@+id/atmLanguageHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmUsageHeading"
+            android:layout_below="@+id/atmUsageHeading"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/language"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmLanguageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/atmLanguageHeading"
+            android:layout_alignBottom="@+id/atmLanguageHeading"
+            android:layout_alignStart="@+id/atmUsageValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear5"
+        android:id="@+id/linear6" >
+
+        <TextView
+            android:id="@+id/atmAvailableNotesHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmServicesHeading"
+            android:layout_below="@+id/atmLanguageHeading"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/available_notes"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmAvailableNotesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmLanguageValue"
+            android:layout_below="@+id/atmLanguageValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear6"
+        android:id="@+id/linear7" >
+
+        <TextView
+            android:id="@+id/atmServicesHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/atmServicesValue"
+            android:layout_alignBottom="@+id/atmServicesValue"
+            android:layout_alignStart="@+id/atmUsageHeading"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/atm_services"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/atmServicesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/atmAvailableNotesValue"
+            android:layout_below="@+id/atmAvailableNotesValue"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

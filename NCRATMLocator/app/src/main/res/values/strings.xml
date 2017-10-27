@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NCR ATM Locator</string>
+    <string name="title_activity_maps">ATM Locator</string>
+    <string name="app_bar_menu_text">Filter</string>
+    <string name="google_api_key">AIzaSyCvWfpOZQnq-5puyXA55zK1GUcfZoOrMac</string>
+
+    <string name="settings_cash_withdrawl">Cash Withdrawl</string>
+    <string name="settings_deposit">Deposit Unit</string>
+    <string name="settings_cheque_unit">Cheque Unit</string>
+    <string name="settings_selection">Filter ATMs by characteristics:</string>
+    <string name="confirm">Confirm</string>
+    <string name="placeholder_text">Placeholder</string>
+    <string name="status">Status: </string>
+    <string name="cost">Cost: </string>
+    <string name="owner">Owner: </string>
+    <string name="usage">Estimated Usage: </string>
+    <string name="language">Language Options: </string>
+    <string name="available_notes">Available Notes: </string>
+    <string name="atm_services">ATM Services: </string>
+
+
+</resources>
